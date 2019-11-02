@@ -7,7 +7,7 @@ spec:
   template:
     metadata:
       annotations:
-        readiness.status.sidecar.istio.io/applicationPorts: ""
+        sidecar.istio.io/inject: "true"
       labels:
         app: discounts
         version: v1
@@ -49,7 +49,7 @@ spec:
   template:
     metadata:
       annotations:
-        readiness.status.sidecar.istio.io/applicationPorts: ""
+        sidecar.istio.io/inject: "true"
       labels:
         app: flights
         version: v1
@@ -92,7 +92,7 @@ spec:
   template:
     metadata:
       annotations:
-        readiness.status.sidecar.istio.io/applicationPorts: ""
+        sidecar.istio.io/inject: "true"
       labels:
         app: hotels
         version: v1
@@ -135,7 +135,7 @@ spec:
   template:
     metadata:
       annotations:
-        readiness.status.sidecar.istio.io/applicationPorts: ""
+        sidecar.istio.io/inject: "true"
       labels:
         app: cars
         version: v1
@@ -178,7 +178,7 @@ spec:
   template:
     metadata:
       annotations:
-        readiness.status.sidecar.istio.io/applicationPorts: ""
+        sidecar.istio.io/inject: "true"
       labels:
         app: insurances
         version: v1
@@ -221,7 +221,7 @@ spec:
   template:
     metadata:
       annotations:
-        readiness.status.sidecar.istio.io/applicationPorts: ""
+        sidecar.istio.io/inject: "true"
       labels:
         app: travels
         version: v1
