@@ -11,7 +11,7 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - "www.travel-agency.com"
+        - "*"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -19,7 +19,7 @@ metadata:
   name: travel-agency-virtual-service
 spec:
   hosts:
-    - "www.travel-agency.com"
+    - "*"
   gateways:
     - travel-agency-gateway
   http:
